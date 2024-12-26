@@ -1,0 +1,124 @@
+.products .box-container{ 
+    grid-template-columns: repeat (auto-fit, minmax (20rem, 1fr)); 
+    justify-content: center; 
+}
+.products .box-container .box{ 
+    box-shadow: var(--box-shadow); 
+    border-radius: .5rem; 
+    padding: 2rem 1rem; 
+    margin: 1rem; 
+    position: relative; 
+}
+.products .box-container .box .img { 
+    width: 100%; 
+    height: 15rem; 
+    object-fit: cover; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.products .box-container .box .name{ 
+    font-size: 1.2rem; 
+    color: #555; 
+    text-transform: capitalize; 
+}
+.products .box-container .box .button{ 
+    text-align: center; 
+    position: absolute; 
+    bottom: 32%; 
+    right: 7%; 
+    border-radius: 20px; 
+    background: var(--light-green); 
+    padding: .5rem 1.5rem; 
+}
+.products .box-container .box .button i, 
+.products .box-container .box .button a{ 
+    font-size: 1.3rem; 
+    font-weight: bold; 
+    margin-right: .5rem; 
+    color: #000; 
+}
+.products .box-container .box .flex{ 
+    padding-bottom: 1rem; 
+    display: flex; 
+    margin-right: auto; 
+}
+.products .box-container .box.price{ 
+    font-size: 1.1rem; 
+    color: var(--green); 
+    margin-right: auto; 
+}
+.products .box-container .box .btn {
+    position: absolute; 
+    top: auto; /* Adjust or remove as needed */
+    bottom: 90%; /* Move closer to the bottom */
+    right: 60%; /* Align closer to the right side */
+    left: auto; /* Adjust if aligning to the left is not needed */
+    transform: translate(0, 0); /* Optional: Center alignment adjustments */
+    padding: 0.3rem 0.8rem; /* Reduced padding for a smaller button */
+    font-size: 0.9rem; /* Smaller font size */
+    border-radius: 7rem; /* Adjust the border radius for proportion */
+    width: auto; /* Ensure the button adjusts dynamically to its content */
+    height: auto; /* Keep height minimal based on padding and font size */
+}
+
+.products .box-container .box .flex .qty{ 
+    border-radius: 1rem; 
+    padding: 0.5rem 1rem; 
+    width: 4.5rem; 
+    height: auto;
+    font-size: 1.1rem; 
+    color: #000; 
+}
+.products .box-container .box .flex .fa-edit{ 
+    border-radius: .5rem; 
+    font-size: 1.7rem; 
+    color: #fff; 
+    height: 2.5rem; 
+    width: 3.5rem; 
+    cursor: pointer;
+    background-color: var(--green);
+    margin-left: .7rem;
+}
+.products .box-container .box .flex .fa-edit:hover{ 
+      background: var(--light-green); 
+}
+.products .box-container .box .sub-total{ 
+    padding-bottom: 1rem; 
+    font-size: 1.7rem; 
+    color: gray; 
+}
+.products .box-container .box .sub-total span{
+    color: red;
+}
+.products .box-container .box .button{
+    align-items: center;
+}
+.products .cart-total{
+    box-shadow: var(--box-shadow); 
+    border-radius: 5rem; 
+    max-width: 50vw; 
+    margin: 1rem auto; 
+    text-align: center; 
+    padding: 2rem; 
+    gap: 2rem;
+}
+.products .cart-total p{ 
+    padding-bottom: 1rem; 
+    font-size: 1.5rem; 
+    color: #555; 
+    text-transform: capitalize; 
+}
+.products .cart-total p span{ 
+    color: var(--green);
+}
+.products .cart-total .btn {
+    width: 15rem;
+    margin-right: 2rem; /* Add space to the right of each button */
+}
+
+.products .cart-total .btn:last-child {
+    margin-right: 2rem;
+    margin-bottom: 1rem; 
+}
+

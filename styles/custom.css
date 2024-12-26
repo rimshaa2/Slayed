@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .box-container {
+    display: flex !important;
+    background-image: url('img/bg.jpg');
+}
+
